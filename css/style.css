@@ -8,20 +8,16 @@ body {
     font-family: Arial, sans-serif;
 }
 
-
+/* ESTILIZAÇÃO DO HEADER */
 nav ul {
     list-style-type: none;
     background-color: rgb(20, 39, 124);
+    padding: 15px;
 }
 
 nav ul li {
     display: inline-block;
     position: relative;
-}
-
-nav ul li:hover{
-    background-color: white;
-    color: blue;
 }
 
 nav ul li a{
@@ -35,6 +31,11 @@ nav ul li a:hover{
     background-color: white;
 }
 
+.search {
+    float: right;
+    margin-right:-15px;
+}
+
 .dropdown:hover .dropdown-content {
     display: block;
 }
@@ -44,7 +45,8 @@ nav ul li a:hover{
     position: absolute;
     background-color: #DDD;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
+    margin-top:15px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
     z-index: 1;
 }
 
@@ -63,18 +65,67 @@ nav ul li a:hover{
     display: block;
 }
 
-.search {
-    float: right;
+/* ESTILIZAÇÃO DA SEÇÃO SOBRE A BANDA */
+@font-face {
+    font-family: MadimiOne-Regular ;
+    src: url(MadimiOne-Regular.ttf);
 }
 
-.search input[type="text"] {
-    padding: 5px;
-    border: none;
-    border-bottom: 1px solid #aaa;
+h1{
+    font-family: MadimiOne-Regular, sans-serif, tahoma;
+    font-size: 30px;
+    margin:20px 0;
 }
 
-.search button {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
+.about{
+    background-color: #DDD;
+    text-align: center;
+    padding: 15px;
+    width: 100%;
+}
+
+.about p{
+    padding:0 40px;
+    margin-bottom:20px;
+}
+
+#band_photo{
+    max-width: 500px;
+    
+}
+
+#band_photo:hover {
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);
+}
+
+/* ESTILIZAÇÃO DA SEÇÃO DISCOGRAFIA */
+.discography{
+    padding:25px;
+}
+
+h2{
+    font-family: sans-serif, tahoma;
+    font-size: 24px;
+}
+
+.albuns{
+    width: 90%;
+    border: 1px solid;
+    margin:0 auto;
+}
+
+.albuns ul{
+    list-style-type: none;
+}
+
+.albuns ul li{
+    display: inline-block;
+}
+
+
+
+
+
+#album-cover{
+    width: 250px;
 }
