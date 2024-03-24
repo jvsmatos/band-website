@@ -4,6 +4,12 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: MadimiOne-Regular ;
+    src: url(MadimiOne-Regular.ttf);
+}
+
+
 body {
     font-family: Arial, sans-serif;
 }
@@ -11,8 +17,10 @@ body {
 /* ESTILIZAÇÃO DO HEADER */
 nav ul {
     list-style-type: none;
-    background-color: rgb(20, 39, 124);
-    padding: 15px;
+    background-color: black;
+    padding: 25px 15px;
+    font-family: tahoma, sans-serif;
+    font-weight: bold;
 }
 
 nav ul li {
@@ -23,7 +31,7 @@ nav ul li {
 nav ul li a{
     text-decoration: none;
     color: white;
-    padding: 15px;
+    padding: 25px 15px;
 }
 
 nav ul li a:hover{
@@ -47,13 +55,14 @@ nav ul li a:hover{
     min-width: 160px;
     margin-top:15px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
-    z-index: 1;
+    z-index: 2;
 }
 
 .dropdown-content a{
     color: rgb(20, 39, 124);
     display: block;
     padding: 10px;
+    font-weight: 200;
 }
 
 .dropdown-content a:hover{
@@ -66,36 +75,64 @@ nav ul li a:hover{
 }
 
 /* ESTILIZAÇÃO DA SEÇÃO SOBRE A BANDA */
-@font-face {
-    font-family: MadimiOne-Regular ;
-    src: url(MadimiOne-Regular.ttf);
-}
-
-h1{
-    font-family: MadimiOne-Regular, sans-serif, tahoma;
-    font-size: 30px;
-    margin:20px 0;
-}
 
 .about{
-    background-color: #DDD;
+    background-color: black;
     text-align: center;
-    padding: 15px;
     width: 100%;
 }
 
-.about p{
-    padding:0 40px;
+.band-text{
+    position: absolute;
+    z-index: 1;
+}
+
+.band-text h1{
+    color: white;
+    font-family: MadimiOne-Regular, sans-serif, tahoma;
+    font-size: 40px;
+    margin:25px 0;
+}
+
+.band-text p{
+    color: white;
+    padding:0 60px;
     margin-bottom:20px;
 }
 
 #band_photo{
-    max-width: 500px;
-    
+    max-width: 100%;
+    position: relative;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.6);
 }
 
-#band_photo:hover {
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);
+/* ESTILIZAÇÃO DA SEÇÃO TOURS */
+
+.tour-dates{
+    background-color: #DDD;
+    padding:30px;
+}
+
+.tour-dates h2{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 28px;
+    font-weight: bolder;
+    color: black;
+}
+
+.tour-dates ul {
+    margin:20px 0;
+    list-style-type: none;
+}
+
+.tour-dates ul li{
+    margin: 10px 0;
+    display:table-column;
+    border: 1px solid;
+}
+
+.tour-dates ul li p{
+    float: left;
 }
 
 /* ESTILIZAÇÃO DA SEÇÃO DISCOGRAFIA */
