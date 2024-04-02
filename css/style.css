@@ -238,7 +238,7 @@ nav ul li a:hover{
     margin:7px 0;
 }
 
-#album-cover{
+.album-cover{
     border: .5px solid rgba(70, 70, 70, 0.8) ;
     padding: 2px;
     width: 250px;
