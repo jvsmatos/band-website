@@ -90,7 +90,7 @@ nav ul li a:hover{
 .band-text h1{
     color: white;
     font-family: MadimiOne-Regular, sans-serif, tahoma;
-    font-size: 40px;
+    font-size: 45px;
     margin:25px 0;
 }
 
@@ -98,57 +98,118 @@ nav ul li a:hover{
     color: white;
     padding:0 60px;
     margin-bottom:20px;
+    font-size: 20px;
 }
 
 #band_photo{
     max-width: 100%;
     position: relative;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.6);
+    box-shadow: 0px 10px 16px 0px rgba(0,0,0,0.6);
 }
 
 /* ESTILIZAÇÃO DA SEÇÃO TOURS */
 
 .tour-dates{
-    background-color: #DDD;
-    padding:30px;
+    background-color: #a0a0a0;
+    padding:40px 30px;
+}
+
+.tour-dates div{
+    display: flex;
+    justify-content: center;
 }
 
 .tour-dates h2{
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 28px;
+    font-family:MadimiOne-Regular, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+    text-align: center;
     font-weight: bolder;
     color: black;
+    margin:15px 0;
 }
 
 .tour-dates ul {
-    margin:20px 0;
+    margin:20px 10px;
     list-style-type: none;
+    display: inline-block;
 }
 
 .tour-dates ul li{
     margin: 10px 0;
-    display:table-column;
-    border: 1px solid;
+    display:block;
+    border: 0px solid;
 }
 
 .tour-dates ul li p{
-    float: left;
+    display: inline-block;
 }
+
+.tour-dates ul li p.date{
+    color: white;
+    font-family: tahoma, Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.tour-dates ul li p.city{
+    font-family: tahoma, Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.tour-dates ul li p.city a{
+    text-decoration: none;
+    color: black;
+}
+
+.tour-dates ul li p.city a:hover{
+    text-decoration: underline;
+}
+
+.tour-dates ul li p.soldout{
+    color: white;
+    font-size: 14px;
+    font-weight: 300;
+    background-color: red;
+    padding: .5px 4px;
+}
+
+.tour-dates ul li p.newshow{
+    color: white;
+    font-size: 14px;
+    font-weight: 300;
+    background-color: rgb(20, 39, 124);
+    padding: .5px 4px;
+}
+
 
 /* ESTILIZAÇÃO DA SEÇÃO DISCOGRAFIA */
 .discography{
     padding:25px;
+    background-color: rgba(0, 0, 0, 0.9);
+    box-shadow: 0px 2px 15px 5px rgba(0,0,0,0.6);
+    background-image: url(../images/bgshape.jpg);
+    background-size: cover;
+    background-blend-mode: multiply ;
 }
 
-h2{
-    font-family: sans-serif, tahoma;
-    font-size: 24px;
+.discography h2{
+    font-family:MadimiOne-Regular, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+    text-align: center;
+    font-weight: bolder;
+    color: white;
+    margin:15px 0;
 }
 
 .albuns{
     width: 90%;
-    border: 1px solid;
+    border: 0px solid white;
+    display: flex;
+    justify-content: center;
     margin:0 auto;
+    padding: 15px 0;
 }
 
 .albuns ul{
@@ -157,12 +218,129 @@ h2{
 
 .albuns ul li{
     display: inline-block;
+    border: 0px solid white;
+    max-width: 230px;
+    margin: 0 20px;
 }
 
+.albuns ul li a{
+    text-decoration: none;
+    color: white;
+}
 
+.albuns ul li a:hover{
+    text-decoration: underline;
+}
 
-
+.album-name{
+    color: white;
+    text-align: center;
+    margin:7px 0;
+}
 
 #album-cover{
+    border: .5px solid rgba(70, 70, 70, 0.8) ;
+    padding: 2px;
     width: 250px;
+    height: 250px;
 }
+
+.more {
+    text-align: center;
+    margin:5px 0;
+    font-weight: bold;
+}
+
+/* ESTILIZAÇÃO DA SEÇÃO CONTATOS */
+.contact{
+    padding: 20px;
+    background-color: #a0a0a0;
+}
+
+.contact h2{
+    font-family:MadimiOne-Regular, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+    text-align: center;
+    font-weight: bolder;
+    color: black;
+    margin:15px 0 30px 0;
+}
+
+.contact-form{
+    width: 400px;
+    margin: 30px auto;
+}
+
+.contact-form  form input{
+    padding: 10px;
+    width: 400px;
+    margin:5px 0;
+    font-size: 14px;
+    border: 0px;
+}
+
+.contact-form form textarea{
+    padding: 10px;
+    font-size: 14px;
+    width: 400px;
+    margin:5px 0;
+    resize: none;
+    border: 0px;
+}
+
+.contact-form button{
+    background-color: black;
+    padding: 7px 15px;
+    color: white;
+    font-weight: bold;
+    border: 0px;
+    display: block;
+}
+
+.intro{
+    padding: 15px 20px;
+}
+
+.intro p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 17px;
+    text-align: center;
+    color: white;
+    margin:0 50px;
+}
+.intro a{
+    text-decoration: ;
+}
+
+footer{
+    background-color: black;
+    color: white; 
+    text-align: center;
+}
+
+footer > p{
+    padding:5px 0;
+    font-size: 14px;
+}
+
+.social-icons{
+    width: 50%;
+    margin:0 auto;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.social-icons li{
+    display: inline-block;
+    margin:15px 10px;
+}
+
+.fa{
+    font-size: 25px;
+    color: white;
+}
+
+.fa:hover{
+    color: rgb(28, 80, 158);
+}
+
